@@ -35,6 +35,7 @@ function getNextBuses() {
   const nextBuses = busData
     .filter(bus => bus.from_location === fromLocation && bus.to_location === toLocation)
     .sort((a, b) => new Date(`01/01/2023 ${a.time}`) - new Date(`01/01/2023 ${b.time}`))
+    .filter(bus => new Date(`01/01/2023 ${bus.time}`).getTime() > currentTime)
     .slice(0, 3);
 
     // Result

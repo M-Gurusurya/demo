@@ -70,6 +70,56 @@
     "from_location": "Sona",
     "to_location": "Jalakandapuram",
     "bus_name": "Thirumagal"
+    },
+
+    {
+    "time": "1:40 PM",
+    "from_location": "Tharamangalam",
+    "to_location": "Jalakandapuram",
+    "bus_name": "Thirumagal"
+    },
+    {
+    "time": "6:25 PM",
+    "from_location": "Tharamangalam",
+    "to_location": "Jalakandapuram",
+    "bus_name": "Balaji"
+    },
+    {
+    "time": "6:40 PM",
+    "from_location": "Tharamangalam",
+    "to_location": "Jalakandapuram",
+    "bus_name": "Alamelu"
+    },
+    {
+    "time": "7:05 PM",
+    "from_location": "Tharamangalam",
+    "to_location": "Jalakandapuram",
+    "bus_name": "Ranganatha"
+    },
+    {
+    "time": "8:00 PM",
+    "from_location": "Tharamangalam",
+    "to_location": "Jalakandapuram",
+    "bus_name": "CD"
+    },
+    {
+    "time": "8:20 PM",
+    "from_location": "Tharamangalam",
+    "to_location": "Jalakandapuram",
+    "bus_name": "Laxmi"
+    },
+    {
+    "time": "9:00 PM",
+    "from_location": "Tharamangalam",
+    "to_location": "Jalakandapuram",
+    "bus_name": "Sehar"
+    },
+
+    {
+    "time": "11:20 AM",
+    "from_location": "Jalakandapuram",
+    "to_location": "Salem",
+    "bus_name": "S4"
     }
 
 ]

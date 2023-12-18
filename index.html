@@ -2,15 +2,42 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Title and Paragraph</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dropdown Menu</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="container">
-    <h1>Title</h1>
-    <p class="four-lines">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-    </p>
-  </div>
+    <div class="banner">
+        <h1>BUS FINDER</h1>
+    </div>
+
+    <div class="time-container">
+        <h1 id="current-time"></h1>
+      </div>
+    <div class="parent">
+        <div class="from">
+            <label for="from">From location:</label>
+            <select name="from" id="from">
+            <option value="Salem">Salem</option>
+            <option value="Jalakandapuram">Jalakandapuram</option>
+            <option value="Sona">Sona</option>
+            <option value="Tharamangalam">tharamangalam</option>
+            </select>
+        </div>
+    
+        <div class="to">
+            <label for="to">To location:</label>
+            <select name="to" id="to">
+            <option value="Jalakandapuram">Jalakandapuram</option>
+            <option value="Salem">Salem</option>
+            <option value="Tharamangalam">tharamangalam</option>
+            </select>
+        </div>
+
+        <button id="showBuses">Show Next Buses</button>
+        <div id="busInfo"></div>
+
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>

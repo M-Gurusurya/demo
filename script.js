@@ -1,11 +1,28 @@
-function updateTime() {
-    const now = new Date();
-    const currentTime = now.toLocaleTimeString();
-    document.getElementById('current-time').textContent = currentTime;
-  }
-  setInterval(updateTime, 1000);
-  
-  updateTime();
+function getCurrentTime() {
+  const now = new Date();
+
+  let hours = now.getHours();
+  const minutes = now.getMinutes();
+  const seconds = now.getSeconds();
+  const ampm = hours >= 12 ? 'PM' : 'AM';
+
+  // Convert hours to 12-hour format
+  hours = hours % 12;
+  hours = hours ? hours : 12; // 0 should be displayed as 12
+
+  const formattedTime = `${hours}:${addLeadingZero(minutes)}:${addLeadingZero(seconds)} ${ampm}`;
+  return formattedTime;
+}
+
+function addLeadingZero(timeUnit) {
+  return timeUnit < 10 ? `0${timeUnit}` : timeUnit;
+}
+
+// Display current time in hh:mm:ss am/pm format
+setInterval(function() {
+  const currentTime = getCurrentTime();
+  document.getElementById('current-time').textContent = currentTime; // Replace with how you want to display the time
+}, 1000); // Update every second
   
   const busScheduleFile = 'busTimings.json';
   let busData;
